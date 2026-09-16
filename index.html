@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="ティー・パーツ合同会社様 ホームページ トップページの構成案(2026年9月)">
+<title>ティー・パーツ合同会社 トップページ構成案</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+  :root {
+    --ink: #1c1a17;
+    --ink-soft: #55504a;
+    --ground: #f5f3ef;
+    --panel: #ffffff;
+    --line: #dcd8d0;
+    --navy: #1b2a6b;
+    --flag: #b8460f;
+    --flag-bg: #fdf1e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #ece9e3;
+      --ink-soft: #a8a29a;
+      --ground: #171614;
+      --panel: #201e1b;
+      --line: #383430;
+      --navy: #93a6e8;
+      --flag: #e59a6a;
+      --flag-bg: #2c211a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #ece9e3; --ink-soft: #a8a29a; --ground: #171614; --panel: #201e1b;
+    --line: #383430; --navy: #93a6e8; --flag: #e59a6a; --flag-bg: #2c211a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ground); color: var(--ink);
+    font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-size: 16px; line-height: 1.85; padding-block: 0 72px; padding-left: 20px; padding-right: 20px;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; }
+  header { padding-block: 56px 40px; border-bottom: 2px solid var(--ink); }
+  .eyebrow { font-size: 13px; letter-spacing: 0.22em; color: var(--ink-soft); margin: 0 0 14px; }
+  h1 { font-family: "Shippori Mincho B1", "Hiragino Mincho ProN", serif; font-size: clamp(21px, 5.2vw, 40px);
+       line-height: 1.45; margin: 0 0 18px; font-weight: 600; text-wrap: balance; overflow-wrap: anywhere; }
+  header p { margin: 0; max-width: 62ch; color: var(--ink-soft); }
+  .legend { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 26px 0 0; padding: 0; list-style: none; font-size: 14px; }
+  .legend li { display: flex; align-items: center; gap: 9px; color: var(--ink-soft); }
+  .swatch { width: 26px; height: 18px; border: 1px solid #6b6866; flex-shrink: 0;
+            background-color: #e7e5e4;
+            background-image: linear-gradient(45deg, transparent 47%, #b8b5b2 47%, #b8b5b2 53%, transparent 53%),
+                              linear-gradient(-45deg, transparent 47%, #b8b5b2 47%, #b8b5b2 53%, transparent 53%); }
+  .flag { font-size: 11px; font-weight: 700; color: var(--flag); background: var(--flag-bg);
+          border: 1px solid var(--flag); padding: 1px 7px; border-radius: 2px; }
+  section { padding-block: 52px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 21px; margin: 0 0 6px; font-weight: 700; }
+  section > p { margin: 0 0 24px; color: var(--ink-soft); font-size: 15px; max-width: 62ch; }
+  .stage { background: var(--panel); border: 1px solid var(--line); overflow: hidden; }
+  .stage .scaler { transform-origin: top left; }
+  .stage iframe { border: 0; display: block; background: #fafaf9; }
+  .phone { display: flex; justify-content: center; }
+  .checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .checks li { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--flag);
+               padding: 14px 18px; font-size: 15px; line-height: 1.7; }
+  footer { padding-top: 36px; color: var(--ink-soft); font-size: 14px; }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">ティー・パーツ合同会社 様</p>
+    <h1>ホームページ トップページ構成案</h1>
+    <p>ページに何をどの順番で載せるかを決めるための設計図です。色と写真はまだ仮で、これから決めていきます。</p>
+    <ul class="legend">
+      <li><span class="swatch"></span>写真やロゴが入る場所</li>
+      <li><span class="flag">要確認</span>事実を確認させていただきたい箇所</li>
+      <li>[ ] の文字はあとで埋める項目です</li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>パソコンで見たとき</h2>
+    <p>画面の幅に合わせて縮めて表示しています。</p>
+    <div class="stage" id="pcStage">
+      <div class="scaler" id="pcScaler">
+        <iframe title="パソコン版の構成案" width="1440" height="8450" scrolling="no" loading="eager" srcdoc="&lt;!doctype html&gt;&lt;html lang=&quot;ja&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap&quot;&gt;
+  &lt;style&gt;
+    body { margin: 0; font-family: &quot;Zen Kaku Gothic New&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Hiragino Sans&quot;, &quot;Yu Gothic&quot;, sans-serif; color: #222; background: #fafaf9; font-size: 15px; line-height: 1.6; }
+    a { color: #1b2a6b; } a:hover { color: #0f1a4a; }
+    .ph { background-color: #e7e5e4; background-image: linear-gradient(45deg, transparent 49.4%, #b8b5b2 49.4%, #b8b5b2 50.6%, transparent 50.6%), linear-gradient(-45deg, transparent 49.4%, #b8b5b2 49.4%, #b8b5b2 50.6%, transparent 50.6%); background-size: 100% 100%; border: 1.5px solid #6b6866; display: flex; align-items: center; justify-content: center; text-align: center; color: #44403c; font-size: 13px; font-weight: 500; }
+    .ph span { background: #fafaf9; padding: 4px 10px; border: 1px solid #a8a29e; }
+    .box { border: 1.5px solid #6b6866; background: #fff; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #222; background: #fff; color: #222; font-weight: 700; padding: 0 22px; height: 48px; font-size: 15px; border-radius: 4px; }
+    .btn-primary { background: #1b2a6b; color: #fff; border-color: #1b2a6b; }
+    .btn-line { background: #fff; color: #222; border-color: #222; }
+    .sec-title { font-size: 28px; font-weight: 700; margin: 0; letter-spacing: 0.04em; }
+    .sec-en { font-size: 12px; color: #78716c; letter-spacing: 0.2em; margin: 0 0 6px; }
+    .note { font-size: 12px; color: #9a3412; background: #fff7ed; border: 1px dashed #f97316; padding: 4px 8px; display: inline-block; }
+    .row { border-bottom: 1px solid #d6d3d1; padding: 12px 0; display: flex; gap: 20px; align-items: center; }
+    .card { border: 1.5px solid #6b6866; background: #fff; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+    .tag { display: inline-block; font-size: 12px; border: 1px solid #222; padding: 1px 8px; }
+    .step-num { width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid #222; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+    table.spec { border-collapse: collapse; width: 100%; font-size: 13px; }
+    table.spec th, table.spec td { border: 1px solid #d6d3d1; padding: 6px 8px; text-align: left; vertical-align: top; }
+    table.spec th { background: #f5f5f4; width: 84px; font-weight: 500; }
+    .chk { display: inline-block; font-size: 11px; font-weight: 700; color: #9a3412; background: #fff7ed; border: 1px solid #f97316; padding: 0 6px; margin-right: 6px; vertical-align: middle; line-height: 18px; border-radius: 2px; }
+    .badge { background: #fff; border: 1.5px solid #222; padding: 14px 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; text-align: center; }
+    .cal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border-top: 1px solid #a8a29e; border-left: 1px solid #a8a29e; }
+    .cal div { border-right: 1px solid #a8a29e; border-bottom: 1px solid #a8a29e; height: 38px; display: flex; align-items: center; justify-content: center; font-size: 14px; background: #fff; }
+    .cal .hd { height: 28px; font-size: 12px; background: #e7e5e4; font-weight: 700; }
+    .cal .off { background: #fde2e2; color: #9f1239; }
+    .cal .blank { background: #f5f5f4; }
+  &lt;/style&gt;
+&lt;/head&gt;&lt;body&gt;
+
+&lt;div style=&quot;width: 1440px; background: #fafaf9; display: flex; flex-direction: column;&quot;&gt;
+
+  &lt;!-- ===== ヘッダー(PCも画面上部に固定追従) ===== --&gt;
+  &lt;header style=&quot;position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 1.5px solid #222;&quot;&gt;
+    &lt;div style=&quot;width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 84px;&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: center; gap: 14px;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;width: 52px; height: 52px;&quot;&gt;&lt;span style=&quot;padding: 2px 6px; font-size: 11px;&quot;&gt;ロゴ&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;display: flex; flex-direction: column;&quot;&gt;
+          &lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;清須市の外構・エクステリア専門店&lt;/div&gt;
+          &lt;div style=&quot;font-size: 20px; font-weight: 700;&quot;&gt;ティー・パーツ合同会社&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; align-items: center; gap: 24px;&quot;&gt;
+        &lt;div style=&quot;display: flex; flex-direction: column; align-items: flex-end;&quot;&gt;
+          &lt;div style=&quot;font-size: 24px; font-weight: 700; letter-spacing: 0.02em;&quot;&gt;052-938-3970&lt;/div&gt;
+          &lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;受付時間 平日 10:00〜19:00&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn btn-line&quot; style=&quot;height: 52px;&quot;&gt;LINEで相談&lt;/div&gt;
+        &lt;div class=&quot;btn btn-primary&quot; style=&quot;height: 52px;&quot;&gt;無料現地調査・お見積もり&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;nav style=&quot;border-top: 1px solid #d6d3d1;&quot;&gt;
+      &lt;div style=&quot;width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); height: 48px;&quot;&gt;
+        &lt;div style=&quot;display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; border-left: 1px solid #d6d3d1;&quot;&gt;会社概要&lt;/div&gt;&lt;div style=&quot;display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; border-left: 1px solid #d6d3d1;&quot;&gt;商品・料金&lt;/div&gt;&lt;div style=&quot;display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; border-left: 1px solid #d6d3d1;&quot;&gt;施工事例&lt;/div&gt;&lt;div style=&quot;display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; border-left: 1px solid #d6d3d1;&quot;&gt;施工品質と保証&lt;/div&gt;&lt;div style=&quot;display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; border-left: 1px solid #d6d3d1;&quot;&gt;対応エリア&lt;/div&gt;&lt;div style=&quot;display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; border-left: 1px solid #d6d3d1;&quot;&gt;よくある質問&lt;/div&gt;&lt;div style=&quot;display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; border-left: 1px solid #d6d3d1;&quot;&gt;お知らせ&lt;/div&gt;&lt;div style=&quot;display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; border-left: 1px solid #d6d3d1;&quot;&gt;お役立ち情報&lt;/div&gt;
+        &lt;div style=&quot;display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; border-left: 1px solid #d6d3d1; border-right: 1px solid #d6d3d1;&quot;&gt;採用情報&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;!-- ===== ファーストビュー(単品工事の価格帯と対応エリアを1画面で) ===== --&gt;
+  &lt;section style=&quot;position: relative; height: 640px; display: flex;&quot;&gt;
+    &lt;div class=&quot;ph&quot; style=&quot;position: absolute; inset: 0; border-width: 0 0 1.5px 0; justify-content: flex-start; align-items: flex-end; padding: 24px 40px; box-sizing: border-box;&quot;&gt;&lt;span&gt;メイン写真:実際の施工現場。職人が作業している写真も候補&lt;/span&gt;&lt;/div&gt;
+    &lt;div style=&quot;position: relative; width: 1200px; margin: 0 auto; display: flex; align-items: center;&quot;&gt;
+      &lt;div style=&quot;background: rgba(255,255,255,0.94); border: 1.5px solid #222; padding: 36px 40px; width: 720px; display: flex; flex-direction: column; gap: 18px;&quot;&gt;
+        &lt;h1 style=&quot;font-size: 32px; line-height: 1.45; margin: 0; font-weight: 700;&quot;&gt;&lt;span style=&quot;display: block; font-size: 20px; color: #1b2a6b; margin-bottom: 8px;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;清須市・名古屋市西部の外構・エクステリア&lt;/span&gt;カーポート1台から、お庭まるごとまで。&lt;br&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;完全自社施工で、&lt;br&gt;工事費込みのお値打ち価格。&lt;/h1&gt;
+        &lt;p style=&quot;margin: 0; font-size: 16px; color: #44403c;&quot;&gt;駐車場の増設、ブロック積み、土間コンクリート、フェンスや物置の設置などの単品工事も、お気軽にご相談ください。&lt;br&gt;無料で現地調査に伺います。&lt;/p&gt;
+        &lt;div style=&quot;display: flex; gap: 12px; align-items: center;&quot;&gt;
+          &lt;div class=&quot;btn btn-primary&quot; style=&quot;height: 56px; padding: 0 28px; font-size: 16px;&quot;&gt;無料で現地調査を申し込む&lt;/div&gt;
+          &lt;div class=&quot;btn btn-line&quot; style=&quot;height: 56px;&quot;&gt;LINEで気軽に相談&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #d6d3d1; padding-top: 16px;&quot;&gt;
+          &lt;div style=&quot;display: flex; align-items: baseline; gap: 12px;&quot;&gt;&lt;div style=&quot;font-size: 13px; font-weight: 700; color: #1b2a6b; white-space: nowrap;&quot;&gt;料金の目安&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;カーポート 112,000円〜 / 土間コンクリート 9,800円/㎡〜 ほか(工事費込み)&lt;/div&gt;&lt;/div&gt;
+          &lt;div style=&quot;display: flex; align-items: baseline; gap: 12px;&quot;&gt;&lt;div style=&quot;font-size: 13px; font-weight: 700; color: #1b2a6b; white-space: nowrap;&quot;&gt;対応エリア&lt;/div&gt;&lt;div style=&quot;font-size: 15px;&quot;&gt;清須市・北名古屋市・あま市・稲沢市・名古屋市ほか&lt;/div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 信頼の数字・保証の帯 ===== --&gt;
+  &lt;section style=&quot;background: #fff; border-bottom: 1.5px solid #222;&quot;&gt;
+    &lt;div style=&quot;width: 1200px; margin: 0 auto; padding: 24px 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px;&quot;&gt;
+      &lt;div class=&quot;badge&quot;&gt;&lt;div style=&quot;font-size: 13px; font-weight: 500;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;施工実績&lt;/div&gt;&lt;div style=&quot;font-size: 30px; font-weight: 700; color: #1b2a6b; line-height: 1.2;&quot;&gt;4,400&lt;span style=&quot;font-size: 16px;&quot;&gt;件以上&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;badge&quot;&gt;&lt;div style=&quot;font-size: 13px; font-weight: 500;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;ご相談から施工まで&lt;/div&gt;&lt;div style=&quot;font-size: 24px; font-weight: 700; color: #1b2a6b; line-height: 1.3;&quot;&gt;完全自社施工&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;badge&quot;&gt;&lt;div style=&quot;font-size: 13px; font-weight: 500;&quot;&gt;現地調査・お見積もり&lt;/div&gt;&lt;div style=&quot;font-size: 30px; font-weight: 700; color: #1b2a6b; line-height: 1.2;&quot;&gt;無料&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;badge&quot;&gt;&lt;div style=&quot;font-size: 13px; font-weight: 500;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;商品保証&lt;/div&gt;&lt;div style=&quot;font-size: 30px; font-weight: 700; color: #1b2a6b; line-height: 1.2;&quot;&gt;2&lt;span style=&quot;font-size: 16px;&quot;&gt;年&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #57534e;&quot;&gt;メーカー規定による&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;badge&quot;&gt;&lt;div style=&quot;font-size: 13px; font-weight: 500;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;工事保証&lt;/div&gt;&lt;div style=&quot;font-size: 30px; font-weight: 700; color: #1b2a6b; line-height: 1.2;&quot;&gt;5&lt;span style=&quot;font-size: 16px;&quot;&gt;年&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px; color: #57534e;&quot;&gt;保証書を発行&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 商品・料金の目安+お支払い方法 ===== --&gt;
+  &lt;section style=&quot;width: 1200px; margin: 0 auto; padding: 88px 0 72px; display: flex; flex-direction: column; gap: 36px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; gap: 8px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;PRODUCTS &amp;amp; PRICE&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;取扱商品と料金の目安&lt;/h2&gt;
+      &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;単品工事も1点から承ります。国内外メーカー10,000点以上の商品を取り扱い、すべて工事費込みの参考価格です。&lt;/p&gt;
+      &lt;div class=&quot;note&quot;&gt;要確認 表示は税込に統一します。土間コンクリートのみ現サイトが税別表記です。対象商品と標準工事の範囲、最低施工量も確定します。&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;&quot;&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 180px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;商品写真&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;カーポート&lt;/div&gt;
+          &lt;div style=&quot;font-size: 14px; color: #57534e;&quot;&gt;オリジナル・YKK AP・LIXIL&lt;/div&gt;
+          &lt;div style=&quot;font-size: 22px; font-weight: 700; color: #1b2a6b;&quot;&gt;112,000円&lt;span style=&quot;font-size: 13px; font-weight: 500; color: #44403c;&quot;&gt;〜(工事費込・税込)&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 180px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;商品写真&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;目隠しフェンス・メッシュフェンス&lt;/div&gt;
+          &lt;div style=&quot;font-size: 14px; color: #57534e;&quot;&gt;YKK AP シンプレオ / イーネット&lt;/div&gt;
+          &lt;div style=&quot;font-size: 22px; font-weight: 700; color: #1b2a6b;&quot;&gt;8,133円&lt;span style=&quot;font-size: 13px; font-weight: 500; color: #44403c;&quot;&gt;/m〜(工事費込・税込)&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 180px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;商品写真&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;ウッドデッキ&lt;/div&gt;
+          &lt;div style=&quot;font-size: 14px; color: #57534e;&quot;&gt;YKK AP リウッドデッキ&lt;/div&gt;
+          &lt;div style=&quot;font-size: 22px; font-weight: 700; color: #1b2a6b;&quot;&gt;27,916円&lt;span style=&quot;font-size: 13px; font-weight: 500; color: #44403c;&quot;&gt;/㎡〜(工事費込・税込)&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 180px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;商品写真&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;テラス屋根&lt;/div&gt;
+          &lt;div style=&quot;font-size: 14px; color: #57534e;&quot;&gt;YKK AP ソラリア&lt;/div&gt;
+          &lt;div style=&quot;font-size: 22px; font-weight: 700; color: #1b2a6b;&quot;&gt;68,300円&lt;span style=&quot;font-size: 13px; font-weight: 500; color: #44403c;&quot;&gt;〜(工事費込・税込)&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 180px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;商品写真&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;物置・ガレージ&lt;/div&gt;
+          &lt;div style=&quot;font-size: 14px; color: #57534e;&quot;&gt;稲葉物置&lt;/div&gt;
+          &lt;div style=&quot;font-size: 22px; font-weight: 700; color: #1b2a6b;&quot;&gt;66,100円&lt;span style=&quot;font-size: 13px; font-weight: 500; color: #44403c;&quot;&gt;〜(工事費込・税込)&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 180px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;商品写真&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;コンクリート土間・外構工事&lt;/div&gt;
+          &lt;div style=&quot;font-size: 14px; color: #57534e;&quot;&gt;土間打設・ブロック積み・タイル・門塀&lt;/div&gt;
+          &lt;div style=&quot;font-size: 22px; font-weight: 700; color: #1b2a6b;&quot;&gt;9,800円&lt;span style=&quot;font-size: 13px; font-weight: 500; color: #44403c;&quot;&gt;/㎡〜(工事費込・税別)&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: flex; justify-content: center;&quot;&gt;
+      &lt;div class=&quot;btn&quot; style=&quot;padding: 0 36px;&quot;&gt;商品・料金の一覧を見る(人工芝・立水栓・照明ほか)&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;border: 1.5px solid #222; background: #fff; padding: 22px 28px; display: flex; flex-direction: column; gap: 4px;&quot;&gt;
+      &lt;div style=&quot;display: flex; align-items: baseline; gap: 16px; margin-bottom: 6px;&quot;&gt;
+        &lt;div style=&quot;font-size: 17px; font-weight: 700;&quot;&gt;お支払い方法&lt;/div&gt;
+        &lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;現金・お振込みのほか、クレジットカード・電子マネー・コード決済に対応しています&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; align-items: center; gap: 20px; padding: 12px 0; border-bottom: 1px solid #d6d3d1;&quot;&gt;
+        &lt;div style=&quot;font-size: 15px; font-weight: 700; width: 150px; flex-shrink: 0;&quot;&gt;クレジットカード&lt;/div&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;flex: 1; height: 56px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Visa / Mastercard / JCB / American Express / Diners Club / Discover のロゴ&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; align-items: center; gap: 20px; padding: 12px 0; border-bottom: 1px solid #d6d3d1;&quot;&gt;
+        &lt;div style=&quot;font-size: 15px; font-weight: 700; width: 150px; flex-shrink: 0;&quot;&gt;電子マネー&lt;/div&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;flex: 1; height: 56px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;楽天Edy / iD / QUICPay+ / nanaco / WAON / Suica・manaca などの交通系 のロゴ&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; align-items: center; gap: 20px; padding: 12px 0; border-bottom: 1px solid #d6d3d1;&quot;&gt;
+        &lt;div style=&quot;font-size: 15px; font-weight: 700; width: 150px; flex-shrink: 0;&quot;&gt;コード決済&lt;/div&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;flex: 1; height: 56px;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;楽天ペイ / PayPay / au PAY / d払い / メルペイ / ゆうちょPay ほか のロゴ&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;note&quot; style=&quot;margin-top: 10px;&quot;&gt;要確認 楽天ペイの店舗用決済サービスで申し込み済みのブランドを確定します。クレジットカードは審査中です。1回あたりの上限額と、工事代金への利用可否も確認します。&lt;/div&gt;
+      &lt;div class=&quot;note&quot;&gt;制作メモ ロゴは楽天ペイから提供される公式素材を使います。承認前のブランドは掲載しません。&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 選ばれる理由(完全自社施工の宣言つき) ===== --&gt;
+  &lt;section style=&quot;width: 1200px; margin: 0 auto; padding: 88px 0 72px; display: flex; flex-direction: column; gap: 32px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot;&gt;REASON&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;ティー・パーツが選ばれる4つの理由&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;border: 1.5px solid #222; background: #fff; padding: 22px 32px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center;&quot;&gt;
+      &lt;div style=&quot;font-size: 20px; font-weight: 700;&quot;&gt;ティー・パーツは、工事業者を仲介・紹介するポータルサイトではなく、完全自社施工で運営しています。&lt;/div&gt;
+      &lt;div style=&quot;font-size: 14px; color: #44403c;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;ご相談・現地調査・お見積もり・施工・アフターフォローまで、自社のスタッフと職人が担当します。&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px;&quot;&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;width: 72px; height: 72px; border-radius: 50%;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 2px 6px;&quot;&gt;アイコン&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;完全自社施工&lt;/div&gt;
+        &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;窓口から施工まで同じ会社なので、ご要望が職人まで正しく伝わります。&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;width: 72px; height: 72px; border-radius: 50%;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 2px 6px;&quot;&gt;アイコン&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;工事費込みのお値打ち価格&lt;/div&gt;
+        &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;中間マージンを省き、メーカー希望小売価格より最大60%OFF。[比較対象の商品と算定日を明記します]&lt;br&gt;工事費込みの目安をサイトで公開しています。&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;width: 72px; height: 72px; border-radius: 50%;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 2px 6px;&quot;&gt;アイコン&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;見えない部分まで丁寧に施工&lt;/div&gt;
+        &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;基礎や配筋など、完成後に隠れる工程ほど手間をかけて施工します。&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;width: 72px; height: 72px; border-radius: 50%;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 2px 6px;&quot;&gt;アイコン&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;保証とアフターフォロー&lt;/div&gt;
+        &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;商品保証2年・工事保証5年。清須市が拠点なので、施工後のご相談にもすぐ伺えます。&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 施工事例 ===== --&gt;
+  &lt;section style=&quot;background: #f0efed; border-top: 1.5px solid #222; border-bottom: 1.5px solid #222;&quot;&gt;
+    &lt;div style=&quot;width: 1200px; margin: 0 auto; padding: 72px 0; display: flex; flex-direction: column; gap: 36px;&quot;&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; gap: 8px;&quot;&gt;
+        &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;WORKS&lt;/p&gt;
+        &lt;h2 class=&quot;sec-title&quot;&gt;施工事例&lt;/h2&gt;
+        &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;地域と工事内容、費用の目安を添えてご紹介しています。&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;&quot;&gt;
+        &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 220px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;施工後の写真&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;&quot;&gt;
+            &lt;div style=&quot;display: flex; gap: 8px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;外構一式&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;新築&lt;/div&gt;&lt;/div&gt;
+            &lt;div style=&quot;font-size: 17px; font-weight: 700;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;[清須市] H様邸 新築外構工事&lt;/div&gt;
+            &lt;table class=&quot;spec&quot;&gt;
+              &lt;tr&gt;&lt;th&gt;工事内容&lt;/th&gt;&lt;td&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;カーポート・門塀・土間コンクリート・植栽&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th&gt;メーカー&lt;/th&gt;&lt;td&gt;[メーカー名]&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th&gt;費用&lt;/th&gt;&lt;td&gt;約[◯◯]万円&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th&gt;工期&lt;/th&gt;&lt;td&gt;約[◯]週間&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 220px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;施工後の写真&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;&quot;&gt;
+            &lt;div style=&quot;display: flex; gap: 8px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;カーポート&lt;/div&gt;&lt;/div&gt;
+            &lt;div style=&quot;font-size: 17px; font-weight: 700;&quot;&gt;[地域名] [◯]様邸 カーポート設置&lt;/div&gt;
+            &lt;table class=&quot;spec&quot;&gt;
+              &lt;tr&gt;&lt;th&gt;工事内容&lt;/th&gt;&lt;td&gt;[工事内容]&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th&gt;メーカー&lt;/th&gt;&lt;td&gt;[メーカー名]&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th&gt;費用&lt;/th&gt;&lt;td&gt;約[◯◯]万円&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th&gt;工期&lt;/th&gt;&lt;td&gt;[◯]日&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 220px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;施工後の写真&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 10px;&quot;&gt;
+            &lt;div style=&quot;display: flex; gap: 8px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;お庭リフォーム&lt;/div&gt;&lt;/div&gt;
+            &lt;div style=&quot;font-size: 17px; font-weight: 700;&quot;&gt;[地域名] [◯]様邸 人工芝・ウッドデッキ&lt;/div&gt;
+            &lt;table class=&quot;spec&quot;&gt;
+              &lt;tr&gt;&lt;th&gt;工事内容&lt;/th&gt;&lt;td&gt;[工事内容]&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th&gt;メーカー&lt;/th&gt;&lt;td&gt;[メーカー名]&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th&gt;費用&lt;/th&gt;&lt;td&gt;約[◯◯]万円&lt;/td&gt;&lt;/tr&gt;
+              &lt;tr&gt;&lt;th&gt;工期&lt;/th&gt;&lt;td&gt;[◯]日&lt;/td&gt;&lt;/tr&gt;
+            &lt;/table&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; justify-content: center;&quot;&gt;
+        &lt;div class=&quot;btn&quot; style=&quot;padding: 0 36px;&quot;&gt;施工事例をもっと見る&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 見えない部分の施工品質+保証 ===== --&gt;
+  &lt;section style=&quot;background: #f0efed; border-top: 1.5px solid #222; border-bottom: 1.5px solid #222;&quot;&gt;
+    &lt;div style=&quot;width: 1200px; margin: 0 auto; padding: 72px 0; display: flex; flex-direction: column; gap: 32px;&quot;&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center;&quot;&gt;
+        &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;QUALITY&lt;/p&gt;
+        &lt;h2 class=&quot;sec-title&quot;&gt;見えない部分の施工品質&lt;/h2&gt;
+        &lt;p style=&quot;margin: 0; font-size: 15px; color: #44403c;&quot;&gt;完成すると見えなくなる基礎や配筋の工事が、外構の丈夫さと長持ちを左右します。&lt;/p&gt;
+        &lt;div class=&quot;note&quot;&gt;制作メモ 各工程の説明文は、須藤様に施工のこだわりを伺って書き直します。&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;&quot;&gt;
+        &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 170px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;工程写真:ブロック基礎&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 18px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+            &lt;div style=&quot;display: flex; align-items: center; gap: 10px;&quot;&gt;&lt;div class=&quot;step-num&quot; style=&quot;width: 30px; height: 30px; font-size: 13px;&quot;&gt;1&lt;/div&gt;&lt;div style=&quot;font-size: 17px; font-weight: 700;&quot;&gt;ブロック基礎&lt;/div&gt;&lt;/div&gt;
+            &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;ブロック塀の強さを左右する基礎は、根入れの深さと鉄筋の入れ方を確認しながら施工します。&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 170px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;工程写真:土間コンクリートの配筋&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 18px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+            &lt;div style=&quot;display: flex; align-items: center; gap: 10px;&quot;&gt;&lt;div class=&quot;step-num&quot; style=&quot;width: 30px; height: 30px; font-size: 13px;&quot;&gt;2&lt;/div&gt;&lt;div style=&quot;font-size: 17px; font-weight: 700;&quot;&gt;土間コンクリートの配筋&lt;/div&gt;&lt;/div&gt;
+            &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;ひび割れを防ぐため、ワイヤーメッシュや鉄筋を正しい位置に据えてからコンクリートを打設します。&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 170px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;工程写真:埋設物の対策と対応&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 18px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+            &lt;div style=&quot;display: flex; align-items: center; gap: 10px;&quot;&gt;&lt;div class=&quot;step-num&quot; style=&quot;width: 30px; height: 30px; font-size: 13px;&quot;&gt;3&lt;/div&gt;&lt;div style=&quot;font-size: 17px; font-weight: 700;&quot;&gt;埋設物の対策と対応&lt;/div&gt;&lt;/div&gt;
+            &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;配管や桝など地中の埋設物を事前に確認し、工事で傷めないよう養生や移設を行います。&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 170px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;工程写真:施工中の写真撮影&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 18px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+            &lt;div style=&quot;display: flex; align-items: center; gap: 10px;&quot;&gt;&lt;div class=&quot;step-num&quot; style=&quot;width: 30px; height: 30px; font-size: 13px;&quot;&gt;4&lt;/div&gt;&lt;div style=&quot;font-size: 17px; font-weight: 700;&quot;&gt;施工中の写真撮影&lt;/div&gt;&lt;/div&gt;
+            &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;完成後に見えなくなる工程を写真で記録し、お客様にご確認いただけるようにしています。&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px;&quot;&gt;
+        &lt;div style=&quot;background: #fff; border: 1.5px solid #222; padding: 24px 28px; display: flex; align-items: center; gap: 24px;&quot;&gt;
+          &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; min-width: 120px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;商品保証&lt;/div&gt;&lt;div style=&quot;font-size: 44px; font-weight: 700; color: #1b2a6b; line-height: 1.1;&quot;&gt;2&lt;span style=&quot;font-size: 20px;&quot;&gt;年&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;カーポートやフェンスなどの製品は、メーカーの保証規定にもとづいて2年間保証します。&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;background: #fff; border: 1.5px solid #222; padding: 24px 28px; display: flex; align-items: center; gap: 24px;&quot;&gt;
+          &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; min-width: 120px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;工事保証&lt;/div&gt;&lt;div style=&quot;font-size: 44px; font-weight: 700; color: #1b2a6b; line-height: 1.1;&quot;&gt;5&lt;span style=&quot;font-size: 20px;&quot;&gt;年&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+          &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;自社で施工した工事に保証書を発行します。&lt;br&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;対象範囲と対象外になるケースは保証ページに記載します。&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; justify-content: center;&quot;&gt;
+        &lt;div class=&quot;btn&quot; style=&quot;padding: 0 36px;&quot;&gt;施工品質と保証について詳しく見る&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 代表・対応エリア ===== --&gt;
+  &lt;section style=&quot;background: #f0efed; border-top: 1.5px solid #222; border-bottom: 1.5px solid #222;&quot;&gt;
+    &lt;div style=&quot;width: 1200px; margin: 0 auto; padding: 72px 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px;&quot;&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column; gap: 20px;&quot;&gt;
+        &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;GREETING&lt;/p&gt;
+        &lt;h2 class=&quot;sec-title&quot;&gt;代表からのご挨拶&lt;/h2&gt;
+        &lt;div style=&quot;display: flex; gap: 24px; align-items: flex-start;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;width: 180px; height: 220px; flex-shrink: 0;&quot;&gt;&lt;span&gt;代表の顔写真&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;display: flex; flex-direction: column; gap: 10px;&quot;&gt;
+            &lt;div style=&quot;font-size: 14px; color: #57534e;&quot;&gt;ティー・パーツ合同会社 代表&lt;/div&gt;
+            &lt;div style=&quot;font-size: 24px; font-weight: 700;&quot;&gt;須藤 敬儀&lt;/div&gt;
+            &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;2014年にホームセンターの指定工事店として創業し、2017年から元請として施主様と直接お取引しています。新築外構からお庭のリフォームまで、どうぞお気軽にご相談ください。&lt;/p&gt;
+            &lt;div class=&quot;btn&quot; style=&quot;align-self: flex-start; height: 40px; font-size: 14px;&quot;&gt;会社概要・沿革を見る&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column; gap: 20px;&quot;&gt;
+        &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;AREA&lt;/p&gt;
+        &lt;h2 class=&quot;sec-title&quot;&gt;対応エリア&lt;/h2&gt;
+        &lt;div style=&quot;display: flex; gap: 24px; align-items: flex-start;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;width: 240px; height: 240px; flex-shrink: 0;&quot;&gt;&lt;span&gt;市町村ごとに色分けした地図(対応エリアを着色)&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;display: flex; flex-direction: column; gap: 10px;&quot;&gt;
+            &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;清須市を中心に、車で約40分圏内に対応しています。&lt;/p&gt;
+            &lt;div style=&quot;display: flex; flex-wrap: wrap; gap: 8px;&quot;&gt;
+              &lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;清須市&lt;/div&gt;&lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;あま市&lt;/div&gt;&lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;稲沢市&lt;/div&gt;&lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;名古屋市&lt;/div&gt;&lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;北名古屋市&lt;/div&gt;&lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;一宮市&lt;/div&gt;&lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;岩倉市&lt;/div&gt;&lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;小牧市&lt;/div&gt;&lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;春日井市&lt;/div&gt;&lt;div class=&quot;tag&quot; style=&quot;background: #fff;&quot;&gt;海部郡&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p style=&quot;margin: 0; font-size: 13px; color: #57534e;&quot;&gt;上記以外の地域もご相談ください。&lt;/p&gt;
+            &lt;div class=&quot;btn&quot; style=&quot;align-self: flex-start; height: 40px; font-size: 14px;&quot;&gt;対応エリアの詳細を見る&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== ご依頼の流れ ===== --&gt;
+  &lt;section style=&quot;width: 1200px; margin: 0 auto; padding: 88px 0 72px; display: flex; flex-direction: column; gap: 36px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; gap: 8px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;FLOW&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;ご依頼の流れ&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px;&quot;&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center; gap: 12px;&quot;&gt;
+        &lt;div class=&quot;step-num&quot;&gt;1&lt;/div&gt;
+        &lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;お問い合わせ&lt;/div&gt;
+        &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;電話・LINE・フォームのいずれかでご連絡ください。&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center; gap: 12px;&quot;&gt;
+        &lt;div class=&quot;step-num&quot;&gt;2&lt;/div&gt;
+        &lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;現地調査(無料)&lt;/div&gt;
+        &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;無料で伺い、敷地の採寸とご要望のヒアリングを行います。&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center; gap: 12px;&quot;&gt;
+        &lt;div class=&quot;step-num&quot;&gt;3&lt;/div&gt;
+        &lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;プラン・お見積もり&lt;/div&gt;
+        &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;図面とお見積もりをご提示します。&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;相見積もりも歓迎です。&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center; gap: 12px;&quot;&gt;
+        &lt;div class=&quot;step-num&quot;&gt;4&lt;/div&gt;
+        &lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;ご契約・施工&lt;/div&gt;
+        &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;自社職人が施工します。&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;工期の目安は事前にお伝えします。&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center; gap: 12px;&quot;&gt;
+        &lt;div class=&quot;step-num&quot;&gt;5&lt;/div&gt;
+        &lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;お引き渡し・アフター&lt;/div&gt;
+        &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;施工後のお困りごとにも迅速に対応します。&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== よくある質問 ===== --&gt;
+  &lt;section style=&quot;background: #f0efed; border-top: 1.5px solid #222; border-bottom: 1.5px solid #222;&quot;&gt;
+    &lt;div style=&quot;width: 1200px; margin: 0 auto; padding: 64px 0; display: flex; flex-direction: column; gap: 24px;&quot;&gt;
+      &lt;div style=&quot;display: flex; justify-content: space-between; align-items: flex-end;&quot;&gt;
+        &lt;div&gt;&lt;p class=&quot;sec-en&quot; style=&quot;margin: 0 0 4px;&quot;&gt;FAQ&lt;/p&gt;&lt;h2 class=&quot;sec-title&quot;&gt;よくある質問&lt;/h2&gt;&lt;/div&gt;
+        &lt;div class=&quot;btn&quot; style=&quot;height: 40px; font-size: 14px;&quot;&gt;よくある質問をすべて見る&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;&quot;&gt;
+        &lt;div class=&quot;box&quot; style=&quot;padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;&lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;Q. 現地調査やお見積もりは無料ですか?&lt;/div&gt;&lt;div style=&quot;font-size: 14px; color: #44403c;&quot;&gt;A. はい、無料で現地調査に伺い、お見積もりをお出しします。&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;box&quot; style=&quot;padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;&lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;Q. フェンス1枚や物置1台だけでも頼めますか?&lt;/div&gt;&lt;div style=&quot;font-size: 14px; color: #44403c;&quot;&gt;A. はい、単品工事やちょっとしたリフォームも承ります。&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;box&quot; style=&quot;padding: 18px 20px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;&lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;Q. 商品の販売だけでも頼めますか?&lt;/div&gt;&lt;div style=&quot;font-size: 14px; color: #44403c;&quot;&gt;A. はい、エクステリア商品の販売のみのご依頼も歓迎です。&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== お役立ち情報(SEO記事) ===== --&gt;
+  &lt;section style=&quot;width: 1200px; margin: 0 auto; padding: 72px 0; display: flex; flex-direction: column; gap: 26px;&quot;&gt;
+    &lt;div style=&quot;display: flex; justify-content: space-between; align-items: flex-end;&quot;&gt;
+      &lt;div&gt;&lt;p class=&quot;sec-en&quot; style=&quot;margin: 0 0 4px;&quot;&gt;COLUMN&lt;/p&gt;&lt;h2 class=&quot;sec-title&quot;&gt;お役立ち情報&lt;/h2&gt;&lt;/div&gt;
+      &lt;div class=&quot;btn&quot; style=&quot;height: 40px; font-size: 14px;&quot;&gt;記事をすべて見る&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p style=&quot;margin: 0; font-size: 15px; color: #44403c;&quot;&gt;外構の費用や商品の選び方など、検討中の方が知りたいことを記事にしていきます。&lt;/p&gt;
+    &lt;div style=&quot;display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;&quot;&gt;
+        &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 170px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;記事のサムネイル&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+            &lt;div style=&quot;display: flex; align-items: center; gap: 10px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;費用の相場&lt;/div&gt;&lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;/div&gt;
+            &lt;div style=&quot;font-size: 16px; font-weight: 700; line-height: 1.5;&quot;&gt;カーポートの費用相場と、見積もりで見落としやすい費用&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 170px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;記事のサムネイル&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+            &lt;div style=&quot;display: flex; align-items: center; gap: 10px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;選び方&lt;/div&gt;&lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;/div&gt;
+            &lt;div style=&quot;font-size: 16px; font-weight: 700; line-height: 1.5;&quot;&gt;目隠しフェンスの高さは何cmにすべきか。隣家との距離から考える&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;height: 170px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;記事のサムネイル&lt;/span&gt;&lt;/div&gt;
+          &lt;div style=&quot;padding: 16px 20px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+            &lt;div style=&quot;display: flex; align-items: center; gap: 10px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;メンテナンス&lt;/div&gt;&lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;/div&gt;
+            &lt;div style=&quot;font-size: 16px; font-weight: 700; line-height: 1.5;&quot;&gt;土間コンクリートのひび割れを防ぐために、施工前に確認すること&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;note&quot;&gt;制作メモ 記事のテーマは公開後に一緒に決めます。月1〜2本を想定し、地域名と悩みの言葉を組み合わせた検索からの入口にします。&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 営業カレンダー+お知らせ ===== --&gt;
+  &lt;section style=&quot;width: 1200px; margin: 0 auto; padding: 72px 0; display: grid; grid-template-columns: 5fr 7fr; gap: 48px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; gap: 16px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;CALENDAR&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;営業カレンダー&lt;/h2&gt;
+      &lt;div class=&quot;box&quot; style=&quot;padding: 18px 20px; display: flex; flex-direction: column; gap: 12px;&quot;&gt;
+        &lt;div style=&quot;display: flex; justify-content: space-between; align-items: center;&quot;&gt;&lt;div style=&quot;font-size: 13px; color: #57534e;&quot;&gt;前月&lt;/div&gt;&lt;div style=&quot;font-size: 17px; font-weight: 700;&quot;&gt;2026年10月の営業日&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #57534e;&quot;&gt;次月&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;cal&quot;&gt;&lt;div class=&quot;hd&quot;&gt;日&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;月&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;火&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;水&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;木&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;金&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;土&lt;/div&gt;&lt;div class=&quot;blank&quot;&gt;&lt;/div&gt;&lt;div class=&quot;blank&quot;&gt;&lt;/div&gt;&lt;div class=&quot;blank&quot;&gt;&lt;/div&gt;&lt;div class=&quot;blank&quot;&gt;&lt;/div&gt;&lt;div&gt;1&lt;/div&gt;&lt;div&gt;2&lt;/div&gt;&lt;div&gt;3&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;4&lt;/div&gt;&lt;div&gt;5&lt;/div&gt;&lt;div&gt;6&lt;/div&gt;&lt;div&gt;7&lt;/div&gt;&lt;div&gt;8&lt;/div&gt;&lt;div&gt;9&lt;/div&gt;&lt;div&gt;10&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;12&lt;/div&gt;&lt;div&gt;13&lt;/div&gt;&lt;div&gt;14&lt;/div&gt;&lt;div&gt;15&lt;/div&gt;&lt;div&gt;16&lt;/div&gt;&lt;div&gt;17&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;18&lt;/div&gt;&lt;div&gt;19&lt;/div&gt;&lt;div&gt;20&lt;/div&gt;&lt;div&gt;21&lt;/div&gt;&lt;div&gt;22&lt;/div&gt;&lt;div&gt;23&lt;/div&gt;&lt;div&gt;24&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;25&lt;/div&gt;&lt;div&gt;26&lt;/div&gt;&lt;div&gt;27&lt;/div&gt;&lt;div&gt;28&lt;/div&gt;&lt;div&gt;29&lt;/div&gt;&lt;div&gt;30&lt;/div&gt;&lt;div&gt;31&lt;/div&gt;&lt;/div&gt;
+        &lt;div style=&quot;display: flex; justify-content: space-between; align-items: center; font-size: 13px;&quot;&gt;&lt;div style=&quot;display: flex; align-items: center; gap: 6px;&quot;&gt;&lt;div style=&quot;width: 14px; height: 14px; background: #fde2e2; border: 1px solid #9f1239;&quot;&gt;&lt;/div&gt;休業日&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;休業日は仮の表示です&lt;/div&gt;&lt;/div&gt;
+        &lt;div style=&quot;font-size: 13px; color: #44403c; border-top: 1px solid #d6d3d1; padding-top: 10px;&quot;&gt;受付時間 平日10:00〜19:00&lt;br&gt;祝祭日、夏季・年末年始休業期間を除く&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; gap: 16px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;NEWS&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;お知らせ&lt;/h2&gt;
+      &lt;div class=&quot;box&quot; style=&quot;padding: 8px 20px;&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;&lt;div style=&quot;font-size: 13px; color: #57534e; width: 90px;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;お知らせ&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;[お知らせのタイトル]&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;&lt;div style=&quot;font-size: 13px; color: #57534e; width: 90px;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;施工事例&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;[施工事例を追加しました]&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;row&quot; style=&quot;border-bottom: 0;&quot;&gt;&lt;div style=&quot;font-size: 13px; color: #57534e; width: 90px;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;お知らせ&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;[休業日のお知らせ]&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box&quot; style=&quot;padding: 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px;&quot;&gt;
+        &lt;div style=&quot;display: flex; flex-direction: column; gap: 4px;&quot;&gt;
+          &lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;一緒に働く仲間を募集しています&lt;/div&gt;
+          &lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;営業・職人を随時募集中。&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;btn&quot; style=&quot;height: 40px; font-size: 14px;&quot;&gt;採用情報&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== お問い合わせ帯 ===== --&gt;
+  &lt;section style=&quot;background: #1b2a6b; color: #fff;&quot;&gt;
+    &lt;div style=&quot;width: 1200px; margin: 0 auto; padding: 64px 0; display: flex; flex-direction: column; align-items: center; gap: 24px;&quot;&gt;
+      &lt;div style=&quot;font-size: 28px; font-weight: 700;&quot;&gt;無料で現地調査に伺います。単品工事のご相談もお気軽にどうぞ。&lt;/div&gt;
+      &lt;div style=&quot;display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; width: 100%;&quot;&gt;
+        &lt;div style=&quot;background: #fff; color: #222; border: 1.5px solid #fff; padding: 24px; display: flex; flex-direction: column; align-items: center; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 13px; color: #57534e;&quot;&gt;お電話で&lt;/div&gt;
+          &lt;div style=&quot;font-size: 30px; font-weight: 700;&quot;&gt;052-938-3970&lt;/div&gt;
+          &lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;平日 10:00〜19:00(祝日・夏季・年末年始を除く)&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;background: #fff; color: #222; border: 1.5px solid #fff; padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 13px; color: #57534e;&quot;&gt;LINEで&lt;/div&gt;
+          &lt;div class=&quot;btn btn-line&quot; style=&quot;height: 52px; padding: 0 32px;&quot;&gt;LINEで相談する&lt;/div&gt;
+          &lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;写真を送るだけで概算をお伝えできます&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;background: #fff; color: #222; border: 1.5px solid #fff; padding: 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 13px; color: #57534e;&quot;&gt;フォームで&lt;/div&gt;
+          &lt;div class=&quot;btn btn-primary&quot; style=&quot;height: 52px; padding: 0 32px;&quot;&gt;無料見積もりフォーム&lt;/div&gt;
+          &lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;3営業日以内にご返信します&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== フッター ===== --&gt;
+  &lt;footer style=&quot;background: #fff; border-top: 1.5px solid #222;&quot;&gt;
+    &lt;div style=&quot;width: 1200px; margin: 0 auto; padding: 48px 0 32px; display: flex; flex-direction: column; gap: 32px;&quot;&gt;
+      &lt;div style=&quot;display: flex; justify-content: space-between; gap: 48px;&quot;&gt;
+        &lt;div style=&quot;display: flex; flex-direction: column; gap: 10px;&quot;&gt;
+          &lt;div style=&quot;display: flex; align-items: center; gap: 12px;&quot;&gt;
+            &lt;div class=&quot;ph&quot; style=&quot;width: 44px; height: 44px;&quot;&gt;&lt;span style=&quot;padding: 2px 6px; font-size: 11px;&quot;&gt;ロゴ&lt;/span&gt;&lt;/div&gt;
+            &lt;div style=&quot;font-size: 18px; font-weight: 700;&quot;&gt;ティー・パーツ合同会社&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div style=&quot;font-size: 14px; color: #44403c;&quot;&gt;〒452-0962 愛知県清須市春日冨士塚120&lt;/div&gt;
+          &lt;div style=&quot;font-size: 14px; color: #44403c;&quot;&gt;TEL 052-938-3970 / FAX 052-938-3975&lt;/div&gt;
+          &lt;div class=&quot;ph&quot; style=&quot;width: 320px; height: 160px;&quot;&gt;&lt;span&gt;Googleマップ&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style=&quot;display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 48px; font-size: 14px;&quot;&gt;
+          &lt;div style=&quot;display: flex; flex-direction: column; gap: 10px;&quot;&gt;&lt;div&gt;選ばれる理由&lt;/div&gt;&lt;div&gt;施工品質と保証&lt;/div&gt;&lt;div&gt;商品・料金の目安&lt;/div&gt;&lt;div&gt;施工事例&lt;/div&gt;&lt;div&gt;対応エリア&lt;/div&gt;&lt;/div&gt;
+          &lt;div style=&quot;display: flex; flex-direction: column; gap: 10px;&quot;&gt;&lt;div&gt;ご依頼の流れ&lt;/div&gt;&lt;div&gt;よくある質問&lt;/div&gt;&lt;div&gt;営業カレンダー&lt;/div&gt;&lt;div&gt;お役立ち情報&lt;/div&gt;&lt;div&gt;お知らせ&lt;/div&gt;&lt;div&gt;会社概要&lt;/div&gt;&lt;/div&gt;
+          &lt;div style=&quot;display: flex; flex-direction: column; gap: 10px;&quot;&gt;&lt;div&gt;採用情報&lt;/div&gt;&lt;div&gt;お問い合わせ&lt;/div&gt;&lt;div&gt;Instagram&lt;/div&gt;&lt;div&gt;LINE&lt;/div&gt;&lt;div&gt;プライバシーポリシー&lt;/div&gt;&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;font-size: 12px; color: #78716c; text-align: center; border-top: 1px solid #d6d3d1; padding-top: 16px;&quot;&gt;© 2026 T-Parts LLC&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>スマートフォンで見たとき</h2>
+    <p>画面の下に、電話・LINE・無料見積もりのボタンが常に出ている想定です。</p>
+    <div class="stage phone" id="spStage">
+      <div class="scaler" id="spScaler">
+        <iframe title="スマホ版の構成案" width="390" height="9750" scrolling="no" loading="eager" srcdoc="&lt;!doctype html&gt;&lt;html lang=&quot;ja&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;display=swap&quot;&gt;
+  &lt;style&gt;
+    body { margin: 0; font-family: &quot;Zen Kaku Gothic New&quot;, &quot;Hiragino Kaku Gothic ProN&quot;, &quot;Hiragino Sans&quot;, &quot;Yu Gothic&quot;, sans-serif; color: #222; background: #fafaf9; font-size: 14px; line-height: 1.6; }
+    a { color: #1b2a6b; } a:hover { color: #0f1a4a; }
+    .ph { background-color: #e7e5e4; background-image: linear-gradient(45deg, transparent 49.4%, #b8b5b2 49.4%, #b8b5b2 50.6%, transparent 50.6%), linear-gradient(-45deg, transparent 49.4%, #b8b5b2 49.4%, #b8b5b2 50.6%, transparent 50.6%); background-size: 100% 100%; border: 1.5px solid #6b6866; display: flex; align-items: center; justify-content: center; text-align: center; color: #44403c; font-size: 12px; font-weight: 500; }
+    .ph span { background: #fafaf9; padding: 3px 8px; border: 1px solid #a8a29e; }
+    .box { border: 1.5px solid #6b6866; background: #fff; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; border: 1.5px solid #222; background: #fff; color: #222; font-weight: 700; padding: 0 18px; height: 48px; font-size: 15px; border-radius: 4px; }
+    .btn-primary { background: #1b2a6b; color: #fff; border-color: #1b2a6b; }
+    .sec-title { font-size: 22px; font-weight: 700; margin: 0; letter-spacing: 0.04em; }
+    .sec-en { font-size: 11px; color: #78716c; letter-spacing: 0.2em; margin: 0 0 4px; }
+    .card { border: 1.5px solid #6b6866; background: #fff; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+    .tag { display: inline-block; font-size: 11px; border: 1px solid #222; padding: 1px 7px; background: #fff; }
+    .step-num { width: 36px; height: 36px; border-radius: 50%; border: 1.5px solid #222; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+    table.spec { border-collapse: collapse; width: 100%; font-size: 13px; }
+    table.spec th, table.spec td { border: 1px solid #d6d3d1; padding: 5px 7px; text-align: left; vertical-align: top; }
+    table.spec th { background: #f5f5f4; width: 64px; font-weight: 500; }
+    .row { border-bottom: 1px solid #d6d3d1; padding: 10px 0; display: flex; flex-direction: column; gap: 4px; }
+    .chk { display: inline-block; font-size: 11px; font-weight: 700; color: #9a3412; background: #fff7ed; border: 1px solid #f97316; padding: 0 6px; margin-right: 6px; vertical-align: middle; line-height: 18px; border-radius: 2px; }
+    .badge { background: #fff; border: 1.5px solid #222; padding: 10px 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0; text-align: center; }
+    .cal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); border-top: 1px solid #a8a29e; border-left: 1px solid #a8a29e; }
+    .cal div { border-right: 1px solid #a8a29e; border-bottom: 1px solid #a8a29e; height: 34px; display: flex; align-items: center; justify-content: center; font-size: 13px; background: #fff; }
+    .cal .hd { height: 24px; font-size: 11px; background: #e7e5e4; font-weight: 700; }
+    .cal .off { background: #fde2e2; color: #9f1239; }
+    .cal .blank { background: #f5f5f4; }
+  &lt;/style&gt;
+&lt;/head&gt;&lt;body&gt;
+
+&lt;div style=&quot;width: 390px; background: #fafaf9; display: flex; flex-direction: column; padding-bottom: 72px; box-sizing: border-box;&quot;&gt;
+
+  &lt;!-- ===== ヘッダー(上部固定) ===== --&gt;
+  &lt;header style=&quot;position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 1.5px solid #222; height: 60px; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; box-sizing: border-box;&quot;&gt;
+    &lt;div style=&quot;display: flex; align-items: center; gap: 8px;&quot;&gt;
+      &lt;div class=&quot;ph&quot; style=&quot;width: 36px; height: 36px;&quot;&gt;&lt;span style=&quot;padding: 1px 4px; font-size: 10px;&quot;&gt;ロゴ&lt;/span&gt;&lt;/div&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column;&quot;&gt;
+        &lt;div style=&quot;font-size: 10px; color: #57534e;&quot;&gt;清須市の外構・エクステリア専門店&lt;/div&gt;
+        &lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;ティー・パーツ合同会社&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: flex; align-items: center; gap: 6px;&quot;&gt;
+      &lt;div class=&quot;box&quot; style=&quot;width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 10px;&quot;&gt;電話&lt;/div&gt;
+      &lt;div class=&quot;box&quot; style=&quot;width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 10px;&quot;&gt;メニュー&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;!-- ===== ファーストビュー ===== --&gt;
+  &lt;section style=&quot;display: flex; flex-direction: column;&quot;&gt;
+    &lt;div class=&quot;ph&quot; style=&quot;height: 230px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;メイン写真:実際の施工現場&lt;/span&gt;&lt;/div&gt;
+    &lt;div style=&quot;padding: 20px 16px; display: flex; flex-direction: column; gap: 14px; background: #fff; border-bottom: 1.5px solid #222;&quot;&gt;
+      &lt;h1 style=&quot;font-size: 22px; line-height: 1.5; margin: 0; font-weight: 700;&quot;&gt;&lt;span style=&quot;display: block; font-size: 15px; color: #1b2a6b; margin-bottom: 6px;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;清須市・名古屋市西部の外構・エクステリア&lt;/span&gt;カーポート1台から、お庭まるごとまで。&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;完全自社施工で、工事費込みのお値打ち価格。&lt;/h1&gt;
+      &lt;p style=&quot;margin: 0; font-size: 14px; color: #44403c;&quot;&gt;単品工事やちょっとしたリフォームもお気軽に。無料で現地調査に伺います。&lt;/p&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+        &lt;div class=&quot;btn btn-primary&quot; style=&quot;height: 52px;&quot;&gt;無料で現地調査を申し込む&lt;/div&gt;
+        &lt;div class=&quot;btn&quot;&gt;LINEで気軽に相談&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column; gap: 8px; border-top: 1px solid #d6d3d1; padding-top: 12px;&quot;&gt;
+        &lt;div&gt;&lt;span style=&quot;font-size: 12px; font-weight: 700; color: #1b2a6b;&quot;&gt;料金の目安&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;カーポート 112,000円〜 / 土間コンクリート 9,800円/㎡〜 ほか(工事費込み)&lt;/span&gt;&lt;/div&gt;
+        &lt;div&gt;&lt;span style=&quot;font-size: 12px; font-weight: 700; color: #1b2a6b;&quot;&gt;対応エリア&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;清須市・北名古屋市・あま市・稲沢市・名古屋市ほか&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 信頼の数字・保証 ===== --&gt;
+  &lt;section style=&quot;padding: 16px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; background: #fff; border-bottom: 1.5px solid #222;&quot;&gt;
+    &lt;div class=&quot;badge&quot;&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;施工実績&lt;/div&gt;&lt;div style=&quot;font-size: 22px; font-weight: 700; color: #1b2a6b;&quot;&gt;4,400&lt;span style=&quot;font-size: 12px;&quot;&gt;件以上&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;badge&quot;&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;ご相談から施工まで&lt;/div&gt;&lt;div style=&quot;font-size: 17px; font-weight: 700; color: #1b2a6b;&quot;&gt;完全自社施工&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;badge&quot;&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;商品保証&lt;/div&gt;&lt;div style=&quot;font-size: 22px; font-weight: 700; color: #1b2a6b;&quot;&gt;2&lt;span style=&quot;font-size: 12px;&quot;&gt;年&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;badge&quot;&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;工事保証&lt;/div&gt;&lt;div style=&quot;font-size: 22px; font-weight: 700; color: #1b2a6b;&quot;&gt;5&lt;span style=&quot;font-size: 12px;&quot;&gt;年&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 商品・料金+お支払い方法 ===== --&gt;
+  &lt;section style=&quot;padding: 40px 16px; display: flex; flex-direction: column; gap: 16px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; gap: 6px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;PRODUCTS &amp;amp; PRICE&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;取扱商品と料金の目安&lt;/h2&gt;
+      &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c; text-align: center;&quot;&gt;単品工事も1点から承ります。すべて工事費込みの参考価格です。&lt;/p&gt;
+    &lt;div class=&quot;note&quot;&gt;要確認 表示は税込に統一します。対象商品と標準工事の範囲も確定します。&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;&quot;&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;height: 110px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding: 10px 12px; display: flex; flex-direction: column; gap: 2px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;カーポート&lt;/div&gt;&lt;div style=&quot;font-size: 16px; font-weight: 700; color: #1b2a6b;&quot;&gt;112,000円〜&lt;span style=&quot;font-size: 11px; color: #57534e; font-weight: 500;&quot;&gt;(税込)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;height: 110px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding: 10px 12px; display: flex; flex-direction: column; gap: 2px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;フェンス&lt;/div&gt;&lt;div style=&quot;font-size: 16px; font-weight: 700; color: #1b2a6b;&quot;&gt;8,133円/m〜&lt;span style=&quot;font-size: 11px; color: #57534e; font-weight: 500;&quot;&gt;(税込)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;height: 110px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding: 10px 12px; display: flex; flex-direction: column; gap: 2px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;ウッドデッキ&lt;/div&gt;&lt;div style=&quot;font-size: 16px; font-weight: 700; color: #1b2a6b;&quot;&gt;27,916円/㎡〜&lt;span style=&quot;font-size: 11px; color: #57534e; font-weight: 500;&quot;&gt;(税込)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;height: 110px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding: 10px 12px; display: flex; flex-direction: column; gap: 2px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;テラス屋根&lt;/div&gt;&lt;div style=&quot;font-size: 16px; font-weight: 700; color: #1b2a6b;&quot;&gt;68,300円〜&lt;span style=&quot;font-size: 11px; color: #57534e; font-weight: 500;&quot;&gt;(税込)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;height: 110px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding: 10px 12px; display: flex; flex-direction: column; gap: 2px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;物置・ガレージ&lt;/div&gt;&lt;div style=&quot;font-size: 16px; font-weight: 700; color: #1b2a6b;&quot;&gt;66,100円〜&lt;span style=&quot;font-size: 11px; color: #57534e; font-weight: 500;&quot;&gt;(税込)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;height: 110px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;padding: 10px 12px; display: flex; flex-direction: column; gap: 2px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;土間・外構工事&lt;/div&gt;&lt;div style=&quot;font-size: 16px; font-weight: 700; color: #1b2a6b;&quot;&gt;9,800円/㎡〜&lt;span style=&quot;font-size: 11px; color: #57534e; font-weight: 500;&quot;&gt;(税別)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn&quot; style=&quot;height: 48px;&quot;&gt;商品・料金の一覧を見る&lt;/div&gt;
+    &lt;div class=&quot;box&quot; style=&quot;padding: 14px; display: flex; flex-direction: column; gap: 10px;&quot;&gt;
+      &lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;お支払い方法&lt;/div&gt;
+      &lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;現金・お振込みのほか、クレジットカード・電子マネー・コード決済に対応しています&lt;/div&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column; gap: 4px;&quot;&gt;
+        &lt;div style=&quot;font-size: 13px; font-weight: 700;&quot;&gt;クレジットカード&lt;/div&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 46px;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 2px 6px;&quot;&gt;Visa / Mastercard / JCB / AMEX / Diners / Discover のロゴ&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column; gap: 4px;&quot;&gt;
+        &lt;div style=&quot;font-size: 13px; font-weight: 700;&quot;&gt;電子マネー&lt;/div&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 46px;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 2px 6px;&quot;&gt;楽天Edy / iD / QUICPay+ / nanaco / WAON / 交通系 のロゴ&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div style=&quot;display: flex; flex-direction: column; gap: 4px;&quot;&gt;
+        &lt;div style=&quot;font-size: 13px; font-weight: 700;&quot;&gt;コード決済&lt;/div&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 46px;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 2px 6px;&quot;&gt;楽天ペイ / PayPay / au PAY / d払い ほか のロゴ&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;note&quot;&gt;要確認 申し込み済みのブランドと、1回あたりの上限額を確定します。クレジットカードは審査中です。&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 選ばれる理由 ===== --&gt;
+  &lt;section style=&quot;padding: 40px 16px; display: flex; flex-direction: column; gap: 16px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot;&gt;REASON&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;選ばれる4つの理由&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;border: 1.5px solid #222; background: #fff; padding: 14px; display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+      &lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;ティー・パーツは、工事業者を仲介・紹介するポータルサイトではなく、完全自社施工で運営しています。&lt;/div&gt;
+      &lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;ご相談からアフターフォローまで、自社のスタッフと職人が担当します。&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;&quot;&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;width: 56px; height: 56px; border-radius: 50%;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 1px 4px;&quot;&gt;アイコン&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;完全自社施工&lt;/div&gt;&lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;ご要望が職人まで正しく伝わります。&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;width: 56px; height: 56px; border-radius: 50%;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 1px 4px;&quot;&gt;アイコン&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;お値打ち価格&lt;/div&gt;&lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;中間マージンを省き、メーカー希望小売価格より最大60%OFF。[比較対象を明記]&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;width: 56px; height: 56px; border-radius: 50%;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 1px 4px;&quot;&gt;アイコン&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;見えない部分も丁寧&lt;/div&gt;&lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;基礎や配筋の工程に手間をかけます。&lt;/p&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;align-items: center; text-align: center;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;width: 56px; height: 56px; border-radius: 50%;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 1px 4px;&quot;&gt;アイコン&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;保証とアフター&lt;/div&gt;&lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;清須市拠点ですぐ伺えます。&lt;/p&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 施工事例 ===== --&gt;
+  &lt;section style=&quot;background: #f0efed; border-top: 1.5px solid #222; border-bottom: 1.5px solid #222; padding: 40px 16px; display: flex; flex-direction: column; gap: 20px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; gap: 6px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;WORKS&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;施工事例&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; gap: 14px;&quot;&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 200px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;施工後の写真&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+          &lt;div style=&quot;display: flex; gap: 6px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;外構一式&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;新築&lt;/div&gt;&lt;/div&gt;
+          &lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;[清須市] H様邸 新築外構工事&lt;/div&gt;
+          &lt;table class=&quot;spec&quot;&gt;
+            &lt;tr&gt;&lt;th&gt;工事内容&lt;/th&gt;&lt;td&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;カーポート・門塀・土間コンクリート・植栽&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;th&gt;費用&lt;/th&gt;&lt;td&gt;約[◯◯]万円&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;th&gt;工期&lt;/th&gt;&lt;td&gt;約[◯]週間&lt;/td&gt;&lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 200px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;施工後の写真&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 14px 16px; display: flex; flex-direction: column; gap: 8px;&quot;&gt;
+          &lt;div style=&quot;display: flex; gap: 6px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;カーポート&lt;/div&gt;&lt;/div&gt;
+          &lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;[地域名] [◯]様邸 カーポート設置&lt;/div&gt;
+          &lt;table class=&quot;spec&quot;&gt;
+            &lt;tr&gt;&lt;th&gt;工事内容&lt;/th&gt;&lt;td&gt;[工事内容]&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;th&gt;費用&lt;/th&gt;&lt;td&gt;約[◯◯]万円&lt;/td&gt;&lt;/tr&gt;
+            &lt;tr&gt;&lt;th&gt;工期&lt;/th&gt;&lt;td&gt;[◯]日&lt;/td&gt;&lt;/tr&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn&quot; style=&quot;height: 48px;&quot;&gt;施工事例をもっと見る&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 見えない部分の施工品質+保証 ===== --&gt;
+  &lt;section style=&quot;background: #f0efed; border-top: 1.5px solid #222; border-bottom: 1.5px solid #222; padding: 40px 16px; display: flex; flex-direction: column; gap: 14px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;QUALITY&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;見えない部分の施工品質&lt;/h2&gt;
+      &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;完成すると見えなくなる工事が、外構の丈夫さと長持ちを左右します。&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;card&quot; style=&quot;flex-direction: row; gap: 12px; padding: 12px;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;width: 96px; height: 80px; flex-shrink: 0;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 1px 4px;&quot;&gt;工程写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; flex-direction: column; gap: 4px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;1. ブロック基礎&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;根入れの深さと鉄筋の入れ方を確認しながら施工します。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;flex-direction: row; gap: 12px; padding: 12px;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;width: 96px; height: 80px; flex-shrink: 0;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 1px 4px;&quot;&gt;工程写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; flex-direction: column; gap: 4px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;2. 土間コンクリートの配筋&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;ワイヤーメッシュや鉄筋を正しい位置に据えてから打設します。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;flex-direction: row; gap: 12px; padding: 12px;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;width: 96px; height: 80px; flex-shrink: 0;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 1px 4px;&quot;&gt;工程写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; flex-direction: column; gap: 4px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;3. 埋設物の対策と対応&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;配管や桝を事前に確認し、傷めないよう養生や移設を行います。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot; style=&quot;flex-direction: row; gap: 12px; padding: 12px;&quot;&gt;&lt;div class=&quot;ph&quot; style=&quot;width: 96px; height: 80px; flex-shrink: 0;&quot;&gt;&lt;span style=&quot;font-size: 11px; padding: 1px 4px;&quot;&gt;工程写真&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;display: flex; flex-direction: column; gap: 4px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;4. 施工中の写真撮影&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;完成後に隠れる工程を写真で記録し、ご確認いただけます。&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;div style=&quot;display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;&quot;&gt;
+      &lt;div class=&quot;box&quot; style=&quot;padding: 12px; display: flex; flex-direction: column; align-items: center; gap: 2px;&quot;&gt;&lt;div style=&quot;font-size: 12px; font-weight: 700;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;商品保証&lt;/div&gt;&lt;div style=&quot;font-size: 30px; font-weight: 700; color: #1b2a6b; line-height: 1.1;&quot;&gt;2&lt;span style=&quot;font-size: 14px;&quot;&gt;年&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px; color: #57534e;&quot;&gt;メーカー規定による&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;box&quot; style=&quot;padding: 12px; display: flex; flex-direction: column; align-items: center; gap: 2px;&quot;&gt;&lt;div style=&quot;font-size: 12px; font-weight: 700;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;工事保証&lt;/div&gt;&lt;div style=&quot;font-size: 30px; font-weight: 700; color: #1b2a6b; line-height: 1.1;&quot;&gt;5&lt;span style=&quot;font-size: 14px;&quot;&gt;年&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px; color: #57534e;&quot;&gt;保証書を発行&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn&quot; style=&quot;height: 48px;&quot;&gt;施工品質と保証を詳しく見る&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 代表・対応エリア ===== --&gt;
+  &lt;section style=&quot;background: #f0efed; border-top: 1.5px solid #222; border-bottom: 1.5px solid #222; padding: 40px 16px; display: flex; flex-direction: column; gap: 32px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; gap: 14px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;GREETING&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;代表からのご挨拶&lt;/h2&gt;
+      &lt;div style=&quot;display: flex; gap: 14px; align-items: flex-start;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;width: 110px; height: 140px; flex-shrink: 0;&quot;&gt;&lt;span&gt;顔写真&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;代表&lt;/div&gt;
+          &lt;div style=&quot;font-size: 20px; font-weight: 700;&quot;&gt;須藤 敬儀&lt;/div&gt;
+          &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;2014年創業。2017年から元請として施主様と直接お取引しています。お気軽にご相談ください。&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;btn&quot; style=&quot;height: 44px; font-size: 14px;&quot;&gt;会社概要・沿革を見る&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; gap: 14px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;AREA&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;対応エリア&lt;/h2&gt;
+      &lt;div class=&quot;ph&quot; style=&quot;height: 200px;&quot;&gt;&lt;span&gt;市町村ごとに色分けした地図&lt;/span&gt;&lt;/div&gt;
+      &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;清須市を中心に、車で約40分圏内に対応しています。&lt;/p&gt;
+      &lt;div style=&quot;display: flex; flex-wrap: wrap; gap: 6px;&quot;&gt;
+        &lt;div class=&quot;tag&quot;&gt;清須市&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;あま市&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;稲沢市&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;名古屋市&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;北名古屋市&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;一宮市&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;岩倉市&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;小牧市&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;春日井市&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;海部郡&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;p style=&quot;margin: 0; font-size: 12px; color: #57534e;&quot;&gt;上記以外の地域もご相談ください。&lt;/p&gt;
+      &lt;div class=&quot;btn&quot; style=&quot;height: 44px; font-size: 14px;&quot;&gt;対応エリアの詳細を見る&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 流れ ===== --&gt;
+  &lt;section style=&quot;padding: 40px 16px; display: flex; flex-direction: column; gap: 20px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; gap: 6px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;FLOW&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;ご依頼の流れ&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; gap: 10px;&quot;&gt;
+      &lt;div class=&quot;card&quot; style=&quot;flex-direction: row; align-items: center; gap: 14px;&quot;&gt;&lt;div class=&quot;step-num&quot;&gt;1&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;お問い合わせ&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;電話・LINE・フォームから&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;flex-direction: row; align-items: center; gap: 14px;&quot;&gt;&lt;div class=&quot;step-num&quot;&gt;2&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;現地調査(無料)&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;無料で伺い、採寸とヒアリング&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;flex-direction: row; align-items: center; gap: 14px;&quot;&gt;&lt;div class=&quot;step-num&quot;&gt;3&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;プラン・お見積もり&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;図面とお見積もりをご提示&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;flex-direction: row; align-items: center; gap: 14px;&quot;&gt;&lt;div class=&quot;step-num&quot;&gt;4&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;ご契約・施工&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;自社職人が施工&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;flex-direction: row; align-items: center; gap: 14px;&quot;&gt;&lt;div class=&quot;step-num&quot;&gt;5&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;お引き渡し・アフター&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;施工後のお困りごとにも対応&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== FAQ ===== --&gt;
+  &lt;section style=&quot;background: #f0efed; border-top: 1.5px solid #222; border-bottom: 1.5px solid #222; padding: 40px 16px; display: flex; flex-direction: column; gap: 12px;&quot;&gt;
+    &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;FAQ&lt;/p&gt;
+    &lt;h2 class=&quot;sec-title&quot;&gt;よくある質問&lt;/h2&gt;
+    &lt;div class=&quot;box&quot; style=&quot;padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;Q. 現地調査やお見積もりは無料ですか?&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;A. はい、無料で伺ってお見積もりをお出しします。&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;box&quot; style=&quot;padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;Q. フェンス1枚や物置1台だけでも頼めますか?&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;A. はい、単品工事も承ります。&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;box&quot; style=&quot;padding: 12px 14px; display: flex; flex-direction: column; gap: 4px;&quot;&gt;&lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;Q. 商品の販売だけでも頼めますか?&lt;/div&gt;&lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;A. はい、販売のみのご依頼も歓迎です。&lt;/div&gt;&lt;/div&gt;
+    &lt;div class=&quot;btn&quot; style=&quot;height: 44px; font-size: 14px;&quot;&gt;よくある質問をすべて見る&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== お役立ち情報(SEO記事) ===== --&gt;
+  &lt;section style=&quot;padding: 40px 16px; display: flex; flex-direction: column; gap: 14px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; gap: 6px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;COLUMN&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;お役立ち情報&lt;/h2&gt;
+      &lt;p style=&quot;margin: 0; font-size: 13px; color: #44403c; text-align: center;&quot;&gt;外構の費用や商品の選び方など、検討中の方が知りたいことを記事にしていきます。&lt;/p&gt;
+    &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 130px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;記事のサムネイル&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 12px 14px; display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;display: flex; align-items: center; gap: 8px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;費用の相場&lt;/div&gt;&lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;/div&gt;
+          &lt;div style=&quot;font-size: 15px; font-weight: 700; line-height: 1.5;&quot;&gt;カーポートの費用相場と、見積もりで見落としやすい費用&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;card&quot; style=&quot;padding: 0; gap: 0;&quot;&gt;
+        &lt;div class=&quot;ph&quot; style=&quot;height: 130px; border-width: 0 0 1.5px 0;&quot;&gt;&lt;span&gt;記事のサムネイル&lt;/span&gt;&lt;/div&gt;
+        &lt;div style=&quot;padding: 12px 14px; display: flex; flex-direction: column; gap: 6px;&quot;&gt;
+          &lt;div style=&quot;display: flex; align-items: center; gap: 8px;&quot;&gt;&lt;div class=&quot;tag&quot;&gt;選び方&lt;/div&gt;&lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;/div&gt;
+          &lt;div style=&quot;font-size: 15px; font-weight: 700; line-height: 1.5;&quot;&gt;目隠しフェンスの高さは何cmにすべきか。隣家との距離から考える&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;div class=&quot;btn&quot; style=&quot;height: 48px;&quot;&gt;記事をすべて見る&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== 営業カレンダー・お知らせ ===== --&gt;
+  &lt;section style=&quot;padding: 40px 16px; display: flex; flex-direction: column; gap: 32px;&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; gap: 12px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;CALENDAR&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;営業カレンダー&lt;/h2&gt;
+      &lt;div class=&quot;box&quot; style=&quot;padding: 14px; display: flex; flex-direction: column; gap: 10px;&quot;&gt;
+        &lt;div style=&quot;display: flex; justify-content: space-between; align-items: center;&quot;&gt;&lt;div class=&quot;box&quot; style=&quot;min-width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #57534e;&quot;&gt;前月&lt;/div&gt;&lt;div style=&quot;font-size: 15px; font-weight: 700;&quot;&gt;2026年10月の営業日&lt;/div&gt;&lt;div class=&quot;box&quot; style=&quot;min-width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #57534e;&quot;&gt;次月&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;cal&quot;&gt;&lt;div class=&quot;hd&quot;&gt;日&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;月&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;火&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;水&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;木&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;金&lt;/div&gt;&lt;div class=&quot;hd&quot;&gt;土&lt;/div&gt;&lt;div class=&quot;blank&quot;&gt;&lt;/div&gt;&lt;div class=&quot;blank&quot;&gt;&lt;/div&gt;&lt;div class=&quot;blank&quot;&gt;&lt;/div&gt;&lt;div class=&quot;blank&quot;&gt;&lt;/div&gt;&lt;div&gt;1&lt;/div&gt;&lt;div&gt;2&lt;/div&gt;&lt;div&gt;3&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;4&lt;/div&gt;&lt;div&gt;5&lt;/div&gt;&lt;div&gt;6&lt;/div&gt;&lt;div&gt;7&lt;/div&gt;&lt;div&gt;8&lt;/div&gt;&lt;div&gt;9&lt;/div&gt;&lt;div&gt;10&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;11&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;12&lt;/div&gt;&lt;div&gt;13&lt;/div&gt;&lt;div&gt;14&lt;/div&gt;&lt;div&gt;15&lt;/div&gt;&lt;div&gt;16&lt;/div&gt;&lt;div&gt;17&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;18&lt;/div&gt;&lt;div&gt;19&lt;/div&gt;&lt;div&gt;20&lt;/div&gt;&lt;div&gt;21&lt;/div&gt;&lt;div&gt;22&lt;/div&gt;&lt;div&gt;23&lt;/div&gt;&lt;div&gt;24&lt;/div&gt;&lt;div class=&quot;off&quot;&gt;25&lt;/div&gt;&lt;div&gt;26&lt;/div&gt;&lt;div&gt;27&lt;/div&gt;&lt;div&gt;28&lt;/div&gt;&lt;div&gt;29&lt;/div&gt;&lt;div&gt;30&lt;/div&gt;&lt;div&gt;31&lt;/div&gt;&lt;/div&gt;
+        &lt;div style=&quot;display: flex; justify-content: space-between; align-items: center; font-size: 11px;&quot;&gt;&lt;div style=&quot;display: flex; align-items: center; gap: 4px;&quot;&gt;&lt;div style=&quot;width: 12px; height: 12px; background: #fde2e2; border: 1px solid #9f1239;&quot;&gt;&lt;/div&gt;休業日&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;休業日は仮の表示&lt;/div&gt;&lt;/div&gt;
+        &lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;受付時間 平日10:00〜19:00(祝祭日、夏季・年末年始休業期間を除く)&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; gap: 12px;&quot;&gt;
+      &lt;p class=&quot;sec-en&quot; style=&quot;margin: 0;&quot;&gt;NEWS&lt;/p&gt;
+      &lt;h2 class=&quot;sec-title&quot;&gt;お知らせ&lt;/h2&gt;
+      &lt;div class=&quot;box&quot; style=&quot;padding: 4px 14px;&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;&lt;div style=&quot;display: flex; gap: 8px; align-items: center;&quot;&gt;&lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;お知らせ&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;[お知らせのタイトル]&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;row&quot;&gt;&lt;div style=&quot;display: flex; gap: 8px; align-items: center;&quot;&gt;&lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;施工事例&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;span class=&quot;chk&quot;&gt;要確認&lt;/span&gt;[施工事例を追加しました]&lt;/div&gt;&lt;/div&gt;
+        &lt;div class=&quot;row&quot; style=&quot;border-bottom: 0;&quot;&gt;&lt;div style=&quot;display: flex; gap: 8px; align-items: center;&quot;&gt;&lt;div style=&quot;font-size: 12px; color: #57534e;&quot;&gt;2026.MM.DD&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;お知らせ&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;[休業日のお知らせ]&lt;/div&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;box&quot; style=&quot;padding: 14px; display: flex; align-items: center; justify-content: space-between; gap: 10px;&quot;&gt;
+        &lt;div style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;営業・職人を募集中&lt;/div&gt;
+        &lt;div class=&quot;btn&quot; style=&quot;height: 44px; font-size: 13px;&quot;&gt;採用情報&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== お問い合わせ帯 ===== --&gt;
+  &lt;section style=&quot;background: #1b2a6b; color: #fff; padding: 36px 16px; display: flex; flex-direction: column; gap: 16px; align-items: center;&quot;&gt;
+    &lt;div style=&quot;font-size: 20px; font-weight: 700; text-align: center;&quot;&gt;無料で現地調査に伺います。単品工事のご相談もお気軽にどうぞ。&lt;/div&gt;
+    &lt;div style=&quot;background: #fff; color: #222; padding: 16px; width: 100%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 4px;&quot;&gt;
+      &lt;div style=&quot;font-size: 26px; font-weight: 700;&quot;&gt;052-938-3970&lt;/div&gt;
+      &lt;div style=&quot;font-size: 11px; color: #57534e;&quot;&gt;平日 10:00〜19:00(祝日・夏季・年末年始を除く)&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn&quot; style=&quot;height: 52px; width: 100%; box-sizing: border-box;&quot;&gt;LINEで相談する&lt;/div&gt;
+    &lt;div class=&quot;btn btn-primary&quot; style=&quot;height: 52px; width: 100%; box-sizing: border-box; border-color: #fff;&quot;&gt;無料見積もりフォーム&lt;/div&gt;
+  &lt;/section&gt;
+
+  &lt;!-- ===== フッター ===== --&gt;
+  &lt;footer style=&quot;background: #fff; border-top: 1.5px solid #222; padding: 28px 16px; display: flex; flex-direction: column; gap: 14px;&quot;&gt;
+    &lt;div style=&quot;font-size: 16px; font-weight: 700;&quot;&gt;ティー・パーツ合同会社&lt;/div&gt;
+    &lt;div style=&quot;font-size: 13px; color: #44403c;&quot;&gt;〒452-0962 愛知県清須市春日冨士塚120&lt;br&gt;TEL 052-938-3970 / FAX 052-938-3975&lt;/div&gt;
+    &lt;div class=&quot;ph&quot; style=&quot;height: 140px;&quot;&gt;&lt;span&gt;Googleマップ&lt;/span&gt;&lt;/div&gt;
+    &lt;div style=&quot;display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; font-size: 13px;&quot;&gt;
+      &lt;div&gt;選ばれる理由&lt;/div&gt;&lt;div&gt;施工品質と保証&lt;/div&gt;&lt;div&gt;商品・料金の目安&lt;/div&gt;&lt;div&gt;施工事例&lt;/div&gt;&lt;div&gt;対応エリア&lt;/div&gt;&lt;div&gt;ご依頼の流れ&lt;/div&gt;&lt;div&gt;よくある質問&lt;/div&gt;&lt;div&gt;営業カレンダー&lt;/div&gt;&lt;div&gt;お役立ち情報&lt;/div&gt;&lt;div&gt;お知らせ&lt;/div&gt;&lt;div&gt;会社概要&lt;/div&gt;&lt;div&gt;採用情報&lt;/div&gt;&lt;div&gt;プライバシーポリシー&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div style=&quot;font-size: 11px; color: #78716c; text-align: center; border-top: 1px solid #d6d3d1; padding-top: 12px;&quot;&gt;© 2026 T-Parts LLC&lt;/div&gt;
+  &lt;/footer&gt;
+
+  &lt;!-- ===== 画面下に固定追従するお問い合わせバー ===== --&gt;
+  &lt;div style=&quot;position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; height: 64px; background: #fff; border-top: 1.5px solid #222; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); box-shadow: 0 -4px 12px rgba(0,0,0,0.12);&quot;&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1.5px solid #222; font-size: 13px; font-weight: 700;&quot;&gt;&lt;div style=&quot;font-size: 11px; color: #57534e; font-weight: 500;&quot;&gt;平日10:00〜19:00&lt;/div&gt;電話する&lt;/div&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; justify-content: center; border-right: 1.5px solid #222; font-size: 13px; font-weight: 700;&quot;&gt;&lt;div style=&quot;font-size: 10px; color: #9a3412; font-weight: 700;&quot;&gt;要確認:写真を送るだけ&lt;/div&gt;LINEで相談&lt;/div&gt;
+    &lt;div style=&quot;display: flex; flex-direction: column; align-items: center; justify-content: center; background: #1b2a6b; color: #fff; font-size: 13px; font-weight: 700;&quot;&gt;&lt;div style=&quot;font-size: 10px; font-weight: 500; opacity: 0.85;&quot;&gt;現地調査無料&lt;/div&gt;無料見積もり&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>確認をお願いしたいこと</h2>
+    <p>オレンジの 要確認 が付いている箇所です。事実と違うところがあれば教えてください。</p>
+    <ul class="checks">
+      <li>施工実績4,400件の数え方。いつからの累計か、どの工事を含むか</li>
+      <li>工事保証の年数と、保証の対象になる範囲</li>
+      <li>協力業者さんに依頼している工事があるかどうか</li>
+      <li>土間コンクリートの価格が税別表記のため、税込に統一したい件</li>
+      <li>最大60%OFFの比較対象と、対象になる商品</li>
+      <li>各工事の対象商品と、標準工事に含まれる範囲</li>
+      <li>定休日と、電話を受けられる曜日</li>
+      <li>対応エリア。名古屋市はどの区まで伺えるか</li>
+    </ul>
+  </section>
+
+  <footer>Ironweb 森野 鉄平 / 2026年9月16日時点の構成案です</footer>
+</div>
+
+<script>
+  function fit(stageId, scalerId, natural) {
+    var stage = document.getElementById(stageId);
+    var scaler = document.getElementById(scalerId);
+    if (!stage || !scaler) return;
+    var avail = stage.clientWidth;
+    var s = Math.min(1, avail / natural);
+    scaler.style.transform = "scale(" + s + ")";
+    scaler.style.width = natural + "px";
+    stage.style.height = Math.round(scaler.firstElementChild.height * s) + "px";
+  }
+  function fitAll() {
+    fit("pcStage", "pcScaler", 1440);
+    fit("spStage", "spScaler", 390);
+  }
+  window.addEventListener("resize", fitAll);
+  fitAll();
+  window.addEventListener("load", fitAll);
+</script>
+
+</body>
+</html>
