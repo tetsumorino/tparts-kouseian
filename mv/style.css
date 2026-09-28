@@ -6,3 +6,5 @@
 @media(min-width:761px){.hero-a{min-height:620px;padding-top:25px;padding-bottom:25px}.b-copy{padding-top:22px;padding-bottom:18px}.b-copy h1{line-height:1.4}.b-copy h1 span{line-height:1.5}.b-copy .description{line-height:1.8;margin:12px 0 15px}.b-copy .price{margin-top:10px;padding-top:8px}.b-copy .area{margin-top:10px;padding-top:10px}.b-copy .map img{height:70px}}
 @media(max-width:760px){.hero-a>.hero-photo{height:280px;object-position:center 65%}}
 @media(min-width:1101px){.hero-a>.area{left:auto;right:calc(4.2% + 560px)}}
+
+.price-sep{display:none}@media(min-width:761px){.hero-a .price-sep,.b-copy .price-sep{display:inline;margin:0 .5em;color:var(--muted)}}
